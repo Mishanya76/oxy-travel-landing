@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OXY Travel — туры из Самары с личным менеджером</title>
+  <meta name="description" content="OXY Travel — самарское турагентство. Подберём тур в Турцию, Египет, ОАЭ, Таиланд или по России под ваш бюджет. Честно, онлайн и с поддержкой в поездке." />
+  <meta property="og:title" content="OXY Travel — ваш личный ключ к идеальному отпуску" />
+  <meta property="og:description" content="Подбираем туры так, будто едем сами. Без скрытых доплат и стресса." />
+  <meta property="og:image" content="assets/hero-egypt.webp" />
+  <meta name="theme-color" content="#007f85" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!--
+    Яндекс.Метрика: замените YM_COUNTER_ID на реальный номер счётчика и раскомментируйте.
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,
+      k.src=r,a.parentNode.insertBefore(k,a)})
+      (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+      ym(YM_COUNTER_ID,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+    </script>
+  -->
+</head>
+<body>
+  <div class="ticker" aria-label="Направления">
+    <div class="ticker__track">
+      <span>Турция ✦ Египет ✦ ОАЭ ✦ Таиланд ✦ Россия ✦ Отпуск без стресса ✦</span>
+      <span aria-hidden="true">Турция ✦ Египет ✦ ОАЭ ✦ Таиланд ✦ Россия ✦ Отпуск без стресса ✦</span>
+    </div>
+  </div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="OXY Travel — на главную">
+        <span class="logo__mark">OXY</span>
+        <span class="logo__text">travel<span class="logo__dot">.</span></span>
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#why">Почему мы</a>
+        <a href="#destinations">Направления</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#quiz">Куда поехать?</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header__phone" href="tel:+79033340181">+7 (903) 334-01-81</a>
+      <button class="btn btn--header js-lead" type="button">Подобрать тур</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg" data-parallax aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__badge"><span class="pulse"></span> Самарское турагентство · с 2014 года</div>
+        <h1>OXY Travel — <em>ваш личный ключ</em> к идеальному отпуску</h1>
+        <p class="hero__lead">Подбираем туры так, будто едем сами. Без скрытых доплат, странных сюрпризов и стресса.</p>
+        <div class="hero__actions">
+          <button class="btn btn--lime js-lead" type="button" data-lead-source="Главный экран">Подобрать тур за 5 минут <span aria-hidden="true">→</span></button>
+          <a class="hero__link" href="#destinations">Смотреть направления <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="hero__triggers">
+          <li><span>✓</span> С 2014 года помогаем самарцам уезжать отдыхать</li>
+          <li><span>✓</span> Личный менеджер, а не колл-центр</li>
+          <li><span>✓</span> На связи, пока вы в поездке</li>
+        </ul>
+      </div>
+      <div class="hero__sticker hero__sticker--sun" aria-hidden="true">ХОЧУ<br />ТУДА!</div>
+      <div class="hero__sticker hero__sticker--sea" aria-hidden="true">без<br />доплат</div>
+      <a class="hero__scroll" href="#why" aria-label="Листать ниже"><span></span></a>
+    </section>
+
+    <section class="trust" aria-label="Коротко о нас">
+      <div class="container trust__grid">
+        <div class="trust__item"><strong>10+</strong><span>лет в туризме</span></div>
+        <div class="trust__item"><strong>5</strong><span>любимых направлений</span></div>
+        <div class="trust__item"><strong>1</strong><span>менеджер на весь отпуск</span></div>
+        <div class="trust__item"><strong>0</strong><span>скрытых доплат</span></div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">НЕ КОЛЛ-ЦЕНТР, А ЛЮДИ</span>
+          <h2>Почему нам <span class="underline">доверяют самарцы</span></h2>
+          <p class="section__intro">Потому что мы не продаём «просто путёвку». Мы помогаем уехать так, как вы действительно хотите.</p>
+        </div>
+
+        <div class="why__grid">
+          <article class="feature-card feature-card--teal">
+            <div class="feature-card__icon" aria-hidden="true">✦</div>
+            <h3>Честность превыше всего</h3>
+            <p>Не навяжем дорогой отель. Если рядом шумная стройка или слабый Wi-Fi — скажем сразу, ещё до оплаты.</p>
+            <span class="feature-card__tag">А вдруг обманут? — Вот поэтому нет.</span>
+          </article>
+          <article class="feature-card feature-card--yellow">
+            <div class="feature-card__icon" aria-hidden="true">☺</div>
+            <h3>Личный менеджер</h3>
+            <p>Вы общаетесь с конкретным человеком, который помнит: «тихий номер», «ранний вылет не хочу», «детям нужна анимация».</p>
+          </article>
+          <article class="feature-card feature-card--white">
+            <div class="feature-card__icon" aria-hidden="true">↗</div>
+            <h3>Оформление онлайн</h3>
+            <p>Цените время? Документы и оплату организуем дистанционно, встретимся только если реально нужно — или всё отправим в мессенджер.</p>
+          </article>
+          <article class="feature-card feature-card--pink">
+            <div class="feature-card__icon" aria-hidden="true">♥</div>
+            <h3>Поддержка в пути</h3>
+            <p>Застряли в аэропорту, пропал чемодан, не нашли трансфер? Мы решаем вопросы, пока вы пьёте коктейль — или ждёте ответа.</p>
+          </article>
+        </div>
+
+        <div class="anxiety">
+          <div class="anxiety__label">ЗНАКОМО?</div>
+          <div class="anxiety__body">
+            <h3>«Устали искать туры по сотне сайтов?»</h3>
+            <p>В интернете тысячи отелей, но только единицы действительно хороши. Команда OXY Travel уже отфильтровала «мусор»: мы знаем, где вкусные завтраки, где чистое море и где не будет шумной анимации под окном.</p>
+            <p><strong>Доверьте отпуск профессионалам. Сами отдохните от поиска.</strong></p>
+          </div>
+          <button class="btn btn--dark js-lead" type="button">Мне нужна подборка <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section destinations" id="destinations">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <span class="eyebrow">ВЫБИРАЙТЕ СВОЁ</span>
+          <h2>Горячие направления</h2>
+          <p class="section__intro">Цены и программы — из реальных публикаций в VK. Актуальные варианты пришлём в ответ на заявку.</p>
+        </div>
+
+        <div class="destinations__grid">
+          <article class="destination destination--wide">
+            <img src="assets/turkey-kemer.webp" alt="Отель и побережье Кемера, Турция" loading="lazy" />
+            <div class="destination__shade"></div>
+            <div class="destination__body">
+              <span class="destination__flag">🇹🇷</span>
+              <h3>Турция</h3>
+              <p>Всё включено, лучшие семейные отели и релакс для пар. Вылеты из Самары.</p>
+              <div class="destination__bottom">
+                <span class="destination__price">от 76 000 ₽ <small>/ чел</small></span>
+                <button class="btn btn--lime btn--small js-lead" type="button" data-destination="Турция">Хочу сюда</button>
+              </div>
+              <small class="destination__source">Цена из поста VK от 17.02.2026 · Cenger Blue Collection 5*, Сиде</small>
+            </div>
+          </article>
+
+          <article class="destination">
+            <img src="assets/egypt-sahl.webp" alt="Красное море и отель в Сахл-Хашише, Египет" loading="lazy" />
+            <div class="destination__shade"></div>
+            <div class="destination__body">
+              <span class="destination__flag">🇪🇬</span>
+              <h3>Египет</h3>
+              <p>Красное море круглый год. Дайвинг, тёплое солнце и зимний побег от самарских морозов.</p>
+              <div class="destination__bottom">
+                <span class="destination__price">215 000 ₽ <small>/ двоих</small></span>
+                <button class="btn btn--lime btn--small js-lead" type="button" data-destination="Египет">Хочу сюда</button>
+              </div>
+              <small class="destination__source">Предложение из поста VK от 19.02.2026 · Сахл-Хашиш</small>
+            </div>
+          </article>
+
+          <article class="destination destination--uae">
+            <div class="destination__sun" aria-hidden="true"></div>
+            <div class="destination__body">
+              <span class="destination__flag">🇦🇪</span>
+              <h3>ОАЭ</h3>
+              <p>Роскошь Дубая и спокойствие Рас-эль-Хаймы. Шопинг, море и вау-эффект.</p>
+              <div class="destination__bottom">
+                <span class="destination__price">цена по запросу</span>
+                <button class="btn btn--dark btn--small js-lead" type="button" data-destination="ОАЭ">Хочу сюда</button>
+              </div>
+              <small class="destination__source">Подберём варианты под ваши даты и бюджет</small>
+            </div>
+          </article>
+
+          <article class="destination">
+            <img src="assets/thailand-3.webp" alt="Фото туристов OXY Travel в Таиланде" loading="lazy" />
+            <div class="destination__shade"></div>
+            <div class="destination__body">
+              <span class="destination__flag">🇹🇭</span>
+              <h3>Таиланд / Азия</h3>
+              <p>Экзотика, массаж, фрукты и закаты, которые хочется фотографировать без фильтра.</p>
+              <div class="destination__bottom">
+                <span class="destination__price">цена по запросу</span>
+                <button class="btn btn--lime btn--small js-lead" type="button" data-destination="Таиланд">Хочу сюда</button>
+              </div>
+              <small class="destination__source">Фото из альбома VK «Наши туристы в Тае»</small>
+            </div>
+          </article>
+
+          <article class="destination">
+            <img src="assets/russia-samara.webp" alt="Предложение туров по России: Крым и Сочи" loading="lazy" />
+            <div class="destination__shade"></div>
+            <div class="destination__body">
+              <span class="destination__flag">🇷🇺</span>
+              <h3>По России</h3>
+              <p>Алтай, Карелия, Сочи, Крым. Открываем красоту родной страны без виз и перелётов через океан.</p>
+              <div class="destination__bottom">
+                <span class="destination__price">цена по запросу</span>
+                <button class="btn btn--lime btn--small js-lead" type="button" data-destination="Россия">Хочу сюда</button>
+              </div>
+              <small class="destination__source">Подборки туров из Самары — в сообществе VK</small>
+            </div>
+          </article>
+        </div>
+
+        <div class="destinations__cta">
+          <p>Не нашли своё направление? Мы всё равно подберём вариант.</p>
+          <a class="btn btn--vk" href="https://vk.ru/oxy.samara" target="_blank" rel="noopener">Смотреть все предложения в VK <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section emotions" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">ЖИВЫЕ ЭМОЦИИ</span>
+          <h2>Они уже <span class="underline">отдохнули с OXY Travel</span></h2>
+          <p class="section__intro">Настоящие фото из альбомов сообщества — Таиланд, Кипр, Кос и другие поездки.</p>
+        </div>
+
+        <div class="slider" aria-label="Фото туристов">
+          <button class="slider__arrow slider__arrow--prev" type="button" aria-label="Предыдущее фото">‹</button>
+          <div class="slider__viewport" id="slider">
+            <figure class="slide">
+              <img src="assets/thailand-1.webp" alt="Туристы OXY Travel в Таиланде" loading="lazy" />
+              <figcaption><strong>Таиланд</strong><span>«Наши туристы в Тае» · альбом VK</span></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/thailand-4.webp" alt="Пляж и туристы в Таиланде" loading="lazy" />
+              <figcaption><strong>Таиланд</strong><span>Фото из поездки · альбом VK</span></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/cyprus-1.webp" alt="Фото из поездки на Кипр" loading="lazy" />
+              <figcaption><strong>Кипр</strong><span>Фото из альбома сообщества</span></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/kos-1.webp" alt="Остров Кос, Греция" loading="lazy" />
+              <figcaption><strong>Остров Кос</strong><span>«Волшебный о. Кос и вулкан Ниссирос»</span></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/thailand-2.webp" alt="Ещё одно фото туристов OXY Travel в Таиланде" loading="lazy" />
+              <figcaption><strong>Таиланд</strong><span>Живые эмоции, а не сток</span></figcaption>
+            </figure>
+          </div>
+          <button class="slider__arrow slider__arrow--next" type="button" aria-label="Следующее фото">›</button>
+        </div>
+
+        <div class="reviews">
+          <blockquote>
+            <div class="reviews__stars" aria-label="5 звёзд">★★★★★</div>
+            <p>«Спасибо команде OXY! Подобрали тур в Турцию за 2 дня до вылета, когда другие отказывали. Отель превзошёл ожидания!»</p>
+            <footer>Анна, Самара</footer>
+          </blockquote>
+          <blockquote>
+            <div class="reviews__stars" aria-label="5 звёзд">★★★★★</div>
+            <p>«Ездили с детьми в Египет. Менеджер предупредила про рифы и помогла с трансфером. Спокойно и надёжно.»</p>
+            <footer>Дмитрий и Ольга</footer>
+          </blockquote>
+        </div>
+        <p class="reviews__note">Тексты отзывов приведены по вашему брифу — замените их на реальные отзывы из VK перед публикацией.</p>
+      </div>
+    </section>
+
+    <section class="section steps" id="how">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">ПРОСТО КАК 1-2-3-4</span>
+          <h2>Как мы работаем</h2>
+          <p class="section__intro">От «хочу к морю» до «уже на пляже» — без лишних звонков и бумажной волокиты.</p>
+        </div>
+        <ol class="steps__grid">
+          <li><span class="steps__num">01</span><h3>Заявка</h3><p>Оставьте заявку или напишите нам в VK. Пара минут — и мы уже думаем над вашим отпуском.</p></li>
+          <li><span class="steps__num">02</span><h3>Подбор</h3><p>Присылаем 3–5 вариантов под ваш бюджет, даты и характер отдыха. С плюсами и честными минусами.</p></li>
+          <li><span class="steps__num">03</span><h3>Бронирование</h3><p>Выбираете лучший, оплачиваете удобно: карта, СБП или рассрочка. Документы — дистанционно.</p></li>
+          <li><span class="steps__num">04</span><h3>Отдых</h3><p>Получаете документы и наслаждаетесь морем. Мы остаёмся на связи на весь отпуск.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section quiz" id="quiz">
+      <div class="container quiz__inner">
+        <div class="quiz__intro">
+          <span class="eyebrow">КОМПАС ОТПУСКА</span>
+          <h2>Не знаете, <span class="underline">куда полететь?</span></h2>
+          <p>Ответьте на 4 вопроса — пришлём подборку из 5 идеальных отелей и чек-лист «Что обязательно взять в ручную кладь».</p>
+          <ul>
+            <li>⏱ Займёт 40 секунд</li>
+            <li>🎯 Подборка под ваши даты и бюджет</li>
+            <li>🎁 Чек-лист — сразу после теста</li>
+          </ul>
+          <a class="btn btn--lime" href="#quizCard">Пройти тест и получить подборку <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="quiz__card" id="quizCard">
+          <div class="quiz__progress"><div class="quiz__progress-bar" id="quizProgress"></div></div>
+          <div class="quiz__counter">Вопрос <span id="quizStep">1</span> из 4</div>
+          <h3 id="quizQuestion">С кем едем отдыхать?</h3>
+          <div class="quiz__options" id="quizOptions"></div>
+          <button class="btn btn--ghost quiz__back" id="quizBack" type="button" hidden>← Назад</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div>
+          <span class="eyebrow">НА СВЯЗИ</span>
+          <h2>Давайте обсудим <span class="underline">ваш отпуск</span></h2>
+          <p class="contacts__lead">Напишите в VK или позвоните — ответим, даже если вы просто «смотрите варианты».</p>
+          <div class="contacts__actions">
+            <a class="btn btn--vk btn--big" href="https://vk.me/oxy.samara" target="_blank" rel="noopener">Написать в VK <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--lime btn--big" href="tel:+79033340181">Позвонить</a>
+          </div>
+        </div>
+        <address class="contacts__card">
+          <div class="contacts__row"><span>Адрес</span><strong>г. Самара, ул. Лейтенанта Шмидта, 22, оф. 1</strong></div>
+          <div class="contacts__row"><span>Телефон</span><strong><a href="tel:+79033340181">+7 (903) 334-01-81</a></strong></div>
+          <div class="contacts__row"><span>Ещё один номер</span><strong><a href="tel:+78469900969">+7 (846) 990-09-69</a></strong></div>
+          <div class="contacts__row"><span>Email</span><strong><a href="mailto:samara.oxy.travel@gmail.com">samara.oxy.travel@gmail.com</a></strong></div>
+          <div class="contacts__row"><span>Часы</span><strong>Ежедневно 10:00–20:00</strong></div>
+          <div class="contacts__row need-fill"><span>Реквизиты</span><strong>ИП/ООО, ИНН и № в реестре турагентов — заполнить до публикации</strong></div>
+          <a class="contacts__map" href="https://yandex.ru/maps/org/oxy_travel/1618352619/" target="_blank" rel="noopener">Построить маршрут →</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--footer" href="#top"><span class="logo__mark">OXY</span><span class="logo__text">travel<span class="logo__dot">.</span></span></a>
+      <p>© OXY Travel, Самара · С 2014 года рядом с вашими отпусками</p>
+      <a class="footer__vk" href="https://vk.ru/oxy.samara" target="_blank" rel="noopener">Мы ВКонтакте</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="leadModal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+      <span class="eyebrow">5 МИНУТ — И МЫ В ДЕЛЕ</span>
+      <h2 id="modalTitle">Оставьте заявку на подбор тура</h2>
+      <p id="modalLead">Пришлём 3–5 вариантов и честно расскажем про каждый отель.</p>
+      <form id="leadForm">
+        <label>Ваше имя<input name="name" type="text" placeholder="Как к вам обращаться" required /></label>
+        <label>Телефон или VK<input name="contact" type="text" placeholder="+7 (999) 000-00-00" required /></label>
+        <label>Куда хочется
+          <select name="destination">
+            <option value="Ещё не знаю">Ещё не знаю — помогите выбрать</option>
+            <option value="Турция">Турция</option>
+            <option value="Египет">Египет</option>
+            <option value="ОАЭ">ОАЭ</option>
+            <option value="Таиланд">Таиланд / Азия</option>
+            <option value="Россия">Россия</option>
+          </select>
+        </label>
+        <button class="btn btn--lime btn--big" type="submit">Отправить заявку</button>
+        <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Данные уходят только в OXY Travel.</small>
+      </form>
+      <div class="modal__success" id="modalSuccess" hidden>
+        <div class="modal__success-icon" aria-hidden="true">✓</div>
+        <h3>Готово!</h3>
+        <p id="successText">Мы получили заявку. Чтобы ускорить ответ, продублируйте её в VK — там мы отвечаем быстрее всего.</p>
+        <a class="btn btn--vk" href="https://vk.me/oxy.samara" target="_blank" rel="noopener">Дублировать в VK</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="vk_community_messages"></div>
+  <script src="https://vk.com/js/api/openapi.js?169"></script>
+  <script>
+    window.addEventListener('load', function () {
+      if (window.VK && window.VK.Widgets && window.VK.Widgets.CommunityMessages) {
+        window.VK.Widgets.CommunityMessages('vk_community_messages', 71068378, {
+          expandTimeout: 20000,
+          tooltipButtonText: 'Есть вопрос? Напишите нам в VK'
+        });
+      }
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
