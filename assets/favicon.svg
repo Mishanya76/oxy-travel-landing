@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="18" fill="#007f85"/>
+  <circle cx="47" cy="17" r="10" fill="#ffd23f"/>
+  <path d="M8 44c9-13 18-13 27 0s18 13 27 0v20H8z" fill="#c9ff45"/>
+  <text x="32" y="34" font-family="Arial,sans-serif" font-size="19" font-weight="800" text-anchor="middle" fill="#fff">OXY</text>
+</svg>
